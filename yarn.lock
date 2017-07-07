@@ -4315,6 +4315,10 @@ ripemd160@^2.0.0, ripemd160@^2.0.1:
     hash-base "^2.0.0"
     inherits "^2.0.1"
 
+rlite-router@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/rlite-router/-/rlite-router-2.0.1.tgz#d94708ab5e9b84dd2bbdc7680cf80afc7efccbc3"
+
 run-async@^2.2.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/run-async/-/run-async-2.3.0.tgz#0371ab4ae0bdd720d4166d7dfda64ff7a445a6c0"

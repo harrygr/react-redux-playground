@@ -1,16 +1,11 @@
 import * as React from 'react'
 import './App.css'
-import * as actions from './store/actions'
-import { State } from './store'
+import * as actions from '../store/actions'
+import { Page } from './'
 
-const logo = require('./logo.svg')
+const logo = require('../logo.svg')
 
-interface Props {
-  state: State
-  dispatch: actions.Dispatch
-}
-
-export default function App(props: Props) {
+const App: Page = (props) => {
   return (
     <div className='App'>
       <div className='App-header'>
@@ -32,3 +27,5 @@ function incrementAsync(dispatch: actions.Dispatch, by: number) {
     dispatch(actions.increment(by))
   }, 1000)
 }
+
+export default App
