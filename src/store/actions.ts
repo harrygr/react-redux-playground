@@ -22,6 +22,10 @@ export function decrement(): Decrement {
   }
 }
 
-export type Action = Increment | Decrement
+export interface Add10 {
+  type: 'ADD10'
+}
+
+export type Action = Increment | Decrement | Add10
 
 export type Dispatch = (action: Action) => any

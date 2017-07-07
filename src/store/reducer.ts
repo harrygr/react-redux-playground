@@ -8,6 +8,8 @@ export function reducer(state: State, action: Action): State {
       return { ...state, count: state.count + action.by }
     case ActionTypes.DECREMENT:
       return { ...state, count: Math.max(1, state.count - 1) }
+    case 'ADD10':
+      return { ...state, count: state.count + 10 }
   }
   return state
 }

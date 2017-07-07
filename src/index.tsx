@@ -7,10 +7,11 @@ import { store } from './store'
 import * as rlite from 'rlite-router'
 
 const root = document.getElementById('root') as HTMLElement
+const NotFound: () => Page = () => () => <p>Not Found</p>
 
-const routes = rlite(() => <p>Not Found</p>, {
+const routes = rlite(NotFound, {
   '': () => pages.Home,
-  'about/:id': () => pages.About,
+  'about': () => pages.About,
 })
 
 const layout = (Page: Page) => {
